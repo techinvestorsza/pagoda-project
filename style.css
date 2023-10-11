@@ -1,0 +1,203 @@
+body {
+    width: 100lvw;
+    height: 100lvh;
+    margin-bottom: 0px;
+    margin: 0;
+    background: rgb(67, 83, 52);
+    color: rgb(250, 241, 228);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(206, 222, 189);
+    transition: color .5s;
+}
+
+a:hover {
+    text-shadow: 5em;
+    color: rgba(81, 128, 31, 0.898)
+}
+
+section {
+    padding: 0 10%;
+}
+
+h2 {
+    /* border-bottom: 1px solid beige; */
+    text-decoration: underline;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 2.7lvw;
+    color: rgb(214, 199, 176);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    align-items: center;
+}
+img {
+    /* height: 100em; */
+    width: 35lvw;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+
+.introduction img {
+    /* height: 100em; */
+    width: 35lvw;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+
+
+.introduction h2 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.introduction p {
+    margin-top: 0.5lvh;
+    min-width: 30lvw;
+    max-width: 60lvw;
+    /* border: 2px solid white; */
+    font-weight: 100;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    bottom: 0em;
+}
+
+/* Specific to Survey page */
+
+legend {
+    border: 1px solid rgb(158, 179, 132);
+    padding: .2em;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 7.5px;
+}
+
+textarea,
+input  {
+    background-color: rgb(206, 222, 189);
+    border: 0px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 3px 10px;
+    margin: 0 auto;
+    background-color: rgba(135, 92, 33, 0.64);
+    color: rgb(206, 222, 189) yellow green;
+    border: 0.9px solid Beige;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: rgb(74, 109, 37);
+    color: rgb(206, 222, 189) yellow green;
+    transform: translateY(-3px);
+}
+
+/* Links page */
+.links-section {
+    border: 1px solid white;
+    margin: 0 10%;
+    padding: 0 0 2em 1em;
+    border-radius: 7px;
+}
+
+ul {
+    text-decoration: none;
+    display: flexbox;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style:lower-greek;
+    margin: 0;
+}
+
+
+li{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 5px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid beige;
+    padding: 3px;
+    width: 70%;
+    transition: 0.7s;
+}
+
+li:hover {
+    background-color: darkgrey;
+}
+
+/* Models section */
+
+.pagodas {
+    display: grid;
+    margin: 0;
+    background-color: rgba(126, 157, 93, 0.245);
+    padding: 10px;
+    border-radius: 13px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 70lvh;
+    max-width: fit-content + 10px;
+}
+
+.pagodas img {
+    max-width: 12em;
+    margin: 0 0 0 0%;
+    height: 60%;
+    justify-self: center;
+}
+
+.pagodas a {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5% 5% 5% 5%;
+    transition: .7s;
+    align-self: center;
+    border-radius: 10px;
+    max-width: 15em;
+}
+
+.pagodas a:hover {
+    transform: scale(2);
+}
